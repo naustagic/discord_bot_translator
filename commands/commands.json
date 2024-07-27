@@ -1,0 +1,110 @@
+[
+    {
+      "name": "setprincipal",
+      "description": "Configure the main channel to capture messages from",
+      "options": [
+        {
+          "type": 7,
+          "name": "channel",
+          "description": "Channel to capture messages from",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "addsecondary",
+      "description": "Add a secondary channel to receive translated messages",
+      "options": [
+        {
+          "type": 7,
+          "name": "channel",
+          "description": "Channel to send translated messages",
+          "required": true
+        },
+        {
+          "type": 3,
+          "name": "language",
+          "description": "Language to translate to",
+          "required": true,
+          "choices": [
+            { "name": "English", "value": "en" },
+            { "name": "Turkish", "value": "tr" },
+            { "name": "Russian", "value": "ru" },
+            { "name": "Spanish", "value": "es" },
+            { "name": "Portuguese (Brazil)", "value": "pt" },
+            { "name": "Arabic", "value": "ar" },
+            { "name": "Bengali", "value": "bn" },
+            { "name": "Chinese (Simplified)", "value": "zh-CN" },
+            { "name": "Filipino", "value": "tl" },
+            { "name": "French", "value": "fr" },
+            { "name": "German", "value": "de" },
+            { "name": "Greek", "value": "el" },
+            { "name": "Hindi", "value": "hi" },
+            { "name": "Hungarian", "value": "hu" },
+            { "name": "Indonesian", "value": "id" },
+            { "name": "Italian", "value": "it" },
+            { "name": "Japanese", "value": "ja" },
+            { "name": "Korean", "value": "ko" },
+            { "name": "Slovenian", "value": "sl" },
+            { "name": "Ukrainian", "value": "uk" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "listchannels",
+      "description": "List all configured channels and their languages"
+    },
+    {
+      "name": "removechannel",
+      "description": "Remove a secondary channel from receiving translations",
+      "options": [
+        {
+          "type": 7,
+          "name": "channel",
+          "description": "Channel to remove",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "modifychannel",
+      "description": "Modify the language of a secondary channel",
+      "options": [
+        {
+          "type": 7,
+          "name": "channel",
+          "description": "Channel to modify",
+          "required": true
+        },
+        {
+          "type": 3,
+          "name": "language",
+          "description": "New language for translations",
+          "required": true,
+          "choices": [
+            { "name": "English", "value": "en" },
+            { "name": "Turkish", "value": "tr" },
+            { "name": "Russian", "value": "ru" },
+            { "name": "Spanish", "value": "es" },
+            { "name": "Portuguese (Brazil)", "value": "pt" },
+            { "name": "Arabic", "value": "ar" },
+            { "name": "Bengali", "value": "bn" },
+            { "name": "Chinese (Simplified)", "value": "zh-CN" },
+            { "name": "Filipino", "value": "tl" },
+            { "name": "French", "value": "fr" },
+            { "name": "German", "value": "de" },
+            { "name": "Greek", "value": "el" },
+            { "name": "Hindi", "value": "hi" },
+            { "name": "Hungarian", "value": "hu" },
+            { "name": "Indonesian", "value": "id" },
+            { "name": "Italian", "value": "it" },
+            { "name": "Japanese", "value": "ja" },
+            { "name": "Korean", "value": "ko" },
+            { "name": "Slovenian", "value": "sl" },
+            { "name": "Ukrainian", "value": "uk" }
+          ]
+        }
+      ]
+    }
+  ]
